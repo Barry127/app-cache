@@ -1,0 +1,34 @@
+{
+  "name": "app-cache",
+  "version": "0.0.1",
+  "description": "Cache for node apps",
+  "main": "index.js",
+  "scripts": {
+    "lint": "reset && eslint . || true",
+    "lint:watch": "onchange \"**/*.js\" -- npm run lint",
+    "test": "mocha --recursive \"**/*.spec.js\"",
+    "test:coverage": "istanbul cover _mocha \"**/*.spec.js\" -- -R spec",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barry127/app-cache.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Barry de Kleijn <kleijn.barry@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Barry127/app-cache/issues"
+  },
+  "homepage": "https://github.com/Barry127/app-cache#readme",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "onchange": "^3.2.1"
+  }
+}
